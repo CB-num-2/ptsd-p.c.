@@ -1,0 +1,112 @@
+<head>
+	<title>PTSD Group Project</title>
+</head>
+<div id="s1" style="align:center; border: 2px solid black; border-radius: 15px; padding: 20px;""><h1 style="text-align:center;">Post Traumatic Stress Disorder</h1>
+<h3 style="text-align:center; font-family:arial;">By <text style="font-family:cursive;">Cordy B, Kohana Smith</text></h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+<div id="s2"><h1>2</h1></div>
+<div id="s3"><h1>3</h1></div>
+<div id="s4"><h1>4</h1></div>
+<div id="s5"><h1>5</h1></div>
+<div id="s6"><h1>6</h1></div>
+<script>
+	let score = 0;
+	document.addEventListener('keydown', function(event) {
+		if (event.key === 'ArrowLeft') {
+			if (score == 1) {
+		let a1 = document.getElementById('s1');
+		a1.style.display = 'none';
+		let b1 = document.getElementById('s6');
+		b1.style.display = 'block';
+		score=6;
+	};
+			if (score == 2) {
+		let a2 = document.getElementById('s2');
+		a2.style.display = 'none';
+		let b2 = document.getElementById('s1');
+		b2.style.display = 'block';
+		score=1;
+	};
+			if (score == 3) {
+		let a3 = document.getElementById('s3');
+		a3.style.display = 'none';
+		let b3 = document.getElementById('s2');
+		b3.style.display = 'block';
+		score=2;
+	};
+			if (score == 4) {
+		let a4 = document.getElementById('s4');
+		a4.style.display = 'none';
+		let b4 = document.getElementById('s3');
+		b4.style.display = 'block';
+		score=3;
+	};
+			if (score == 5) {
+		let a5 = document.getElementById('s5');
+		a5.style.display = 'none';
+		let b5 = document.getElementById('s4');
+		b5.style.display = 'block';
+		score=4;
+	};
+			if (score == 6) {
+		let a6 = document.getElementById('s6');
+		a6.style.display = 'none';
+		let b6 = document.getElementById('s1');
+		b6.style.display = 'block';
+		score = 5;
+	};
+	} else if (event.key === 'ArrowRight') {
+			if (score == 1) {
+		let a1 = document.getElementById('s1');
+		a1.style.display = 'none';
+		let b1 = document.getElementById('s2');
+		b1.style.display = 'block';
+		score = 2;
+	};
+			if (score == 2) {
+		let a2 = document.getElementById('s2');
+		a2.style.display = 'none';
+		let b2 = document.getElementById('s3');
+		b2.style.display = 'block';
+		score = 3;
+	};
+			if (score == 3) {
+		let a3 = document.getElementById('s3');
+		a3.style.display = 'none';
+		let b3 = document.getElementById('s4');
+		b3.style.display = 'block';
+		score = 4;
+	};
+			if (score == 4) {
+		let a4 = document.getElementById('s4');
+		a4.style.display = 'none';
+		let b4 = document.getElementById('s5');
+		b4.style.display = 'block';
+		score = 5;
+	};
+			if (score == 5) {
+		let a5 = document.getElementById('s5');
+		a5.style.display = 'none';
+		let b5 = document.getElementById('s6');
+		b5.style.display = 'block';
+		score = 6;
+	};
+			if (score == 6) {
+		let a6 = document.getElementById('s6');
+		a6.style.display = 'none';
+		let b6 = document.getElementById('s1');
+		b6.style.display = 'block';
+		score = 1;
+	};
+	}
+});
+	let a7 = document.getElementById('s2');
+		a7.style.display = 'none';
+	let b7 = document.getElementById('s3');
+		b7.style.display = 'none';
+	let c7 = document.getElementById('s4');
+		c7.style.display = 'none';
+	let d7 = document.getElementById('s5');
+		d7.style.display = 'none';
+	let e7 = document.getElementById('s6');
+		e7.style.display = 'none';
+</script>
